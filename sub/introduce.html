@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>병원소개</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css">
+
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub/introduce.css">
+
+    <!-- js -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/common.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div class="gnb_wrap">
+            <h3>
+                <a href="../index.html">
+                    <img src="../images/header_logo.png" alt="인제대학교 해운대백병원">
+                </a>
+            </h3>
+
+            <ul class="mgnb">
+                <li>
+                    <a href="reserve.html">예약/발급</a>
+                </li>
+                <li>
+                    <a href="specialist.html">의료진/진료과</a>
+                </li>
+                <li>
+                    <a href="visitor.html">이용안내</a>
+                </li>
+                <li>
+                    <a href="introduce.html">병원소개</a>
+                </li>
+                <li>
+                    <a href="#menu5">고객센터</a>
+                </li>
+            </ul><!-- mgnb -->
+            <div class="all_close">
+                <i class="bi bi-x-lg" aria-label="사이트맵 닫기"></i>
+            </div><!-- all_close -->
+        </div><!-- all_wrap -->
+
+        <header id="header" class=".on">
+            <div class="inner">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../images/header_logo.png" alt="인제대학교 해운대백병원">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="reserve.html">예약/발급</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="reserve.html">예약안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">온라인진료예약</a>
+                                </li>
+                                <li>
+                                    <a href="#">이벤트</a>
+                                </li>
+                                <li>
+                                    <a href="#">실명인증 등록기관</a>
+                                </li>
+                                <li>
+                                    <a href="#">증명서/확인서 발급</a>
+                                </li>
+                                <li>
+                                    <a href="#">진료시간표</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="specialist.html">의료진/진료과</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">의료진</a>
+                                </li>
+                                <li>
+                                    <a href="specialist.html">진료과</a>
+                                </li>
+                                <li>
+                                    <a href="#">센터/클리닉</a>
+                                </li>
+                                <li>
+                                    <a href="#">기타부서</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="visitor.html">이용안내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">비급여진료비용</a>
+                                </li>
+                                <li>
+                                    <a href="visitor.html">입/퇴원안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">비자신체검진</a>
+                                </li>
+                                <li>
+                                    <a href="#">공단/채용검진</a>
+                                </li>
+                                <li>
+                                    <a href="#">투약 및 주사절차</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="introduce.html">병원소개</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="introduce.html">병원소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">사회공헌</a>
+                                </li>
+                                <li>
+                                    <a href="#">병원학교</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#menu5">안내센터</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">전화번호 안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">층별안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">주차안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">편의시설</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는길</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객의 소리</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                    </ul><!-- gnb -->
+                </nav>
+                <div class="util">
+                    <form class="language">
+                        <select class="bg_eff" name="language" id="lang">
+                            <option value="KR" href="#">KR</option>
+                            <option value="EN" href="#">EN</option>
+                            <option value="JP" href="#">JP</option>
+                            <option value="CN" href="#">CN</option>
+                        </select>
+                    </form>
+                    <div class="ham">
+                        <a href="#">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                </div><!-- util -->
+            </div><!-- inner -->
+            <div class="depth2_bg"></div>
+        </header>
+
+        <main id="main">
+
+            <div class="inner">
+
+                <h2>병원소개</h2>
+
+                <div class="announce">
+                    <div class="head">
+                        <div class="head_img">
+                            <img src="../images/sub/head_img.png" alt="병원장 사진">
+                        </div>
+                        <div class="head_txt">
+                            <h4>
+                                동남권 의료를 선도하는 병원 <br>
+                                "인제대학교 해운대백병원이 한 걸음 더 나아갑니다."
+                            </h4>
+                            <p>인제대학교 해운대백병원 원장</p>
+                            <img src="../images/sub/head_signature.gif" alt="병원장 서인">
+                        </div>
+                    </div>
+
+                </div><!-- announce -->
+
+                <div class="slogan">
+                    <div class="mission">
+                        <h4>Mission</h4>
+                        <p>
+                            생명 존중, 인간사랑으로 최상의 진료, 교육, 연구를 실행하여 <br> <span>인류의 건강과 행복한 삶에 기여</span>한다.
+                        </p>
+                    </div><!-- mission -->
+                    <div class="vision">
+                        <h4>Vision</h4>
+                        <p>동남권 의료를 <span>선도하는 병원</span></p>
+                    </div><!-- vision -->
+                </div><!-- slogan -->
+                <div class="step">
+                    <ul>
+                        <li>
+                            <h5>진료</h5>
+                            <p>
+                                환자중심으로 <span>최상의 의료</span>를 <br> 제공하는 병원
+                            </p>
+                        </li>
+                        <li>
+                            <h5>연구&middot;교육</h5>
+                            <p>
+                                <span>체계적 교육과 혁신적 연구</span>로 <br>발전하는 병원
+                            </p>
+                        </li>
+                        <li>
+                            <h5>봉사</h5>
+                            <p>
+                                <span>존중과 화합</span>으로 <br>지역사회에 공헌하는 병원
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="network">
+                    <h3>조직도</h3>
+                    <img src="../images/sub/hospital_network.jpg" alt="해운대백병원 조직도">
+                </div><!-- network -->
+
+            </div><!-- inner -->
+
+        </main>
+
+        <footer id="footer">
+
+            <div class="footer_bg">
+                <img src="../images/info_bg.png" alt="해운대백병원 로고">
+            </div><!-- footer_bg -->
+
+            <div class="inner">
+                <div class="footer_symbol">
+                    <div class="symbol">
+                        <img src="../images/footer_symbol.png" alt="보건복지부 인증 의료기관">
+                        <p>보건복지부<br>인증 의료기관</p>
+                    </div><!-- symbol -->
+                    <div class="family">
+                        <select name="family_site" id="family_link">
+                            <option value="" href="#">패밀리 사이트</option>
+                            <option value="" href="#">백중앙의료원</option>
+                            <option value="" href="#">부산백병원</option>
+                            <option value="" href="#">상계백병원</option>
+                            <option value="" href="#">일산백병원</option>
+                            <option value="" href="#">해운대백병원</option>
+                            <option value="" href="#">인제대학교</option>
+                        </select>
+                    </div><!-- family -->
+                </div><!-- footer_symbol -->
+                <div class="footer_txt">
+                    <ul class="footer_link">
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">영상정보처리기기운영방침</a>
+                        </li>
+                        <li>
+                            <a href="#">환자권리장전</a>
+                        </li>
+                    </ul><!-- footer_link -->
+                    <ul class="sns">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-youtube" aria-label="유튜브"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-instagram" aria-label="인스타그램"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/footer_blog.png" aria-label="네이버 블로그" alt="네이버 블로그">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-facebook" aria-label="페이스북"></i>
+                            </a>
+                        </li>
+                    </ul><!-- sns -->
+                </div><!-- footer_txt -->
+                <address>
+                    부산광역시 해운대구 해운대로 875 (우)48108 | 지번 : 좌동 1435
+                </address>
+                <div class="copy">
+                    COPYRIGHT &copy; 2022 INJE UNIVERSITY HAEUNDAE PAIK HOSPITAL. ALL RIGHTS RESERVED
+                </div><!-- copy -->
+            </div><!-- inner -->
+        </footer>
+
+    </div><!-- wrap -->
+</body>
+
+</html>

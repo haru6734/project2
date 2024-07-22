@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* main */
+#main { background: #fff; padding: 150px 10%;}
+#main h2 { font-size: 6rem; text-align: center; padding-bottom: 50px;}
+
+
+
+
+/* announce */
+.announce { padding: 50px 0;}
+
+.announce .head { display: flex; gap: 20px; width: 100%;}
+.announce .head_img { width: calc((100% - 20px) - 70%)}
+.announce .head_img img { display: block;}
+
+.announce .head_txt { width: calc((100% - 20px) - 30%);}
+.announce .head_txt h4 { font-size: 4rem; color: #1358a8; padding-top: 50px;}
+.announce .head_txt p { font-size: 2rem; padding: 50px 0 30px;}
+
+
+
+/* slogan */
+.slogan { padding: 50px 0; width: 100%; display: flex; justify-content: space-between; gap: 50px;}
+.slogan h4 { font-size: 3rem;}
+.slogan .mission { width: calc(100% / 2); border-top: 1px dashed #333; border-bottom: 1px dashed #333; padding: 20px;}
+.slogan .mission p { font-size: 2rem; text-align: center; padding: 30px 0;}
+.slogan .mission p span { color: #1358a8; font-weight: 700;}
+
+.slogan .vision { width: calc(100% / 2); border-top: 1px dashed #333; border-bottom: 1px dashed #333; padding: 20px;}
+.slogan .vision p { font-size: 2rem; text-align: center; padding: 30px 0;}
+.slogan .vision p span { color: #1358a8; font-weight: 700;}
+
+
+/* step */
+
+.step { padding: 50px 0;}
+.step ul { display: flex; gap: 30px;}
+.step ul li { width: calc((100% - 60px) / 3); text-align: center; font-size: 2rem; border-radius: 3rem; padding: 50px; font-weight: 700;}
+.step ul li h5 { font-size: 3rem; padding: 10px 0;}
+.step ul li span { color: #01b9b7;}
+
+.step ul li:nth-of-type(1) { background: url('../../images/sub/step_li_bg1.jpg') no-repeat center / cover;}
+.step ul li:nth-of-type(2) { background: url('../../images/sub/step_li_bg2.jpg') no-repeat center / cover;}
+.step ul li:nth-of-type(3) { background: url('../../images/sub/step_li_bg3.jpg') no-repeat center / cover;}
+
+/* network */
+.network h3 { font-size: 4rem; padding: 100px 0;}
+.network img { display: block; width: 100%;}
+
+
+
+@media (max-width:1200px) {
+    #main h2 { font-size: 5rem;}
+    #main h3 { font-size: 3.5rem;}
+    #main h4 { font-size: 2.5rem;}
+    #main h5 { font-size: 2rem;}
+    #main p { font-size: 1.5rem;}
+}
+
+@media (max-width:1000px) {
+    #main h2 { font-size: 3.5rem;}
+    #main h3 { font-size: 2.5rem;}
+    #main h4 { font-size: 2rem;}
+    #main h5 { font-size: 1.6rem;}
+    #main p { font-size: 1.3rem;}
+    .announce .head { flex-wrap: wrap; gap: 0px;}
+    .announce .head_img { width: 100%;}
+    .announce .head_txt { width: 100%;}
+    .slogan { gap: 20px;}
+    .step ul { flex-wrap: wrap;}
+    .step ul li { width: 100%;}
+}
+
+@media (max-width:400px) {
+    #main h2 { font-size: 3rem;}
+    #main h3 { font-size: 2rem;}
+    #main h4 { font-size: 1.6rem;}
+    #main h5 { font-size: 1.4rem;}
+    #main p { font-size: 1.2rem;}
+    .announce .head { flex-wrap: wrap; gap: 0px;}
+    .announce .head_img { width: 100%;}
+    .announce .head_txt { width: 100%;}
+    .slogan { gap: 10px;}
+    .step ul { flex-wrap: wrap;}
+    .step ul li { width: 100%;}
+}

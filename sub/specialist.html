@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진료과</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css">
+
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub/specialist.css">
+
+    <!-- js -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub/specialist.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div class="gnb_wrap">
+            <h3>
+                <img src="../images/header_logo.png" alt="인제대학교 해운대백병원">
+            </h3>
+
+            <ul class="mgnb">
+                <li>
+                    <a href="reserve.html">예약/발급</a>
+                </li>
+                <li>
+                    <a href="specialist.html">의료진/진료과</a>
+                </li>
+                <li>
+                    <a href="visitor.html">이용안내</a>
+                </li>
+                <li>
+                    <a href="introduce.html">병원소개</a>
+                </li>
+                <li>
+                    <a href="#menu5">고객센터</a>
+                </li>
+            </ul><!-- mgnb -->
+            <div class="all_close">
+                <i class="bi bi-x-lg" aria-label="사이트맵 닫기"></i>
+            </div><!-- all_close -->
+        </div><!-- all_wrap -->
+
+        <header id="header" class=".on">
+            <div class="inner">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../images/header_logo.png" alt="인제대학교 해운대백병원">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="reserve.html">예약/발급</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="reserve.html">예약안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">온라인진료예약</a>
+                                </li>
+                                <li>
+                                    <a href="#">이벤트</a>
+                                </li>
+                                <li>
+                                    <a href="#">실명인증 등록기관</a>
+                                </li>
+                                <li>
+                                    <a href="#">증명서/확인서 발급</a>
+                                </li>
+                                <li>
+                                    <a href="#">진료시간표</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="specialist.html">의료진/진료과</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">의료진</a>
+                                </li>
+                                <li>
+                                    <a href="specialist.html">진료과</a>
+                                </li>
+                                <li>
+                                    <a href="#">센터/클리닉</a>
+                                </li>
+                                <li>
+                                    <a href="#">기타부서</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="visitor.html">이용안내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">비급여진료비용</a>
+                                </li>
+                                <li>
+                                    <a href="visitor.html">입/퇴원안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">비자신체검진</a>
+                                </li>
+                                <li>
+                                    <a href="#">공단/채용검진</a>
+                                </li>
+                                <li>
+                                    <a href="#">투약 및 주사절차</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="introduce.html">병원소개</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="introduce.html">병원소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">사회공헌</a>
+                                </li>
+                                <li>
+                                    <a href="#">병원학교</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#menu5">안내센터</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">전화번호 안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">층별안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">주차안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">편의시설</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는길</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객의 소리</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                    </ul><!-- gnb -->
+                </nav>
+                <div class="util">
+                    <form class="language">
+                        <select class="bg_eff" name="language" id="lang">
+                            <option value="KR" href="#">KR</option>
+                            <option value="EN" href="#">EN</option>
+                            <option value="JP" href="#">JP</option>
+                            <option value="CN" href="#">CN</option>
+                        </select>
+                    </form>
+                    <div class="ham">
+                        <a href="#">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                </div><!-- util -->
+            </div><!-- inner -->
+            <div class="depth2_bg"></div>
+        </header>
+
+        <main id="main">
+            <h2>진료과</h2>
+
+            <div class="inner">
+                <div class="list_box">
+                    <div class="medicine">
+                        <div class="tit">
+                            <h3>내과</h3>
+                        </div>
+
+                    </div><!-- medicine -->
+
+                    <div class="surgery">
+                        <div class="tit">
+                            <h3>외과</h3>
+                        </div>
+                    </div><!-- surgery -->
+
+                    <div class="center">
+                        <div class="tit">
+                            <h3>지원센터</h3>
+                        </div>
+                    </div><!-- center -->
+                </div><!-- list_box -->
+
+                <div class="list">
+
+                    <ul class="medicine_list on">
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list1.png" alt="가정의학과">
+                                <p>가정의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list2.png" alt="감염내과">
+                                <p>감염내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list3.png" alt="내분비대사내과">
+                                <p>내분비대사내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list4.png" alt="류마티스내과">
+                                <p>류마티스내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list5.png" alt="소아청소년과">
+                                <p>소아청소년과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list6.png" alt="소화기내과">
+                                <p>소화기내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list7.png" alt="신경과">
+                                <p>신경과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list8.png" alt="신장내과">
+                                <p>신장내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list9.png" alt="심장내과">
+                                <p>심장내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list10.png" alt="알레르기내과">
+                                <p>알레르기내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list11.png" alt="정신건강의학과">
+                                <p>정신건강의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list12.png" alt="피부과">
+                                <p>피부과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list13.png" alt="혈액종양내과">
+                                <p>혈액종양내과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list14.png" alt="호흡기내과">
+                                <p>호흡기내과</p>
+                            </a>
+                        </li>
+                    </ul><!-- medicine_list -->
+
+                    <ul class="surgery_list">
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list15.png" alt="간이식·간·담도·췌장외과">
+                                <p>간이식·간·담도·췌장외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list16.png" alt="갑상선·내분비외과">
+                                <p>갑상선·내분비외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list17.png" alt="대장항문외과">
+                                <p>대장항문외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list18.png" alt="비뇨의학과">
+                                <p>비뇨의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list19.png" alt="산부인과">
+                                <p>산부인과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list20.png" alt="성형외과">
+                                <p>성형외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list21.png" alt="소아외과">
+                                <p>소아외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list22.png" alt="신경외과">
+                                <p>신경외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list23.png" alt="심장혈관흉부외과">
+                                <p>심장혈관흉부외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list24.png" alt="안과">
+                                <p>안과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list25.png" alt="위암·식도암·위장관외과">
+                                <p>위암·식도암·위장관외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list26.png" alt="유방외과">
+                                <p>유방외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list27.png" alt="이비인후·갑상선두경부외과">
+                                <p>이비인후·갑상선두경부외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list28.png" alt="정형외과">
+                                <p>정형외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list29.png" alt="중환자·외상외과">
+                                <p>중환자·외상외과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list30.png" alt="치과">
+                                <p>치과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list31.png" alt="혈관·하지부종외과">
+                                <p>혈관·하지부종외과</p>
+                            </a>
+                        </li>
+                    </ul><!-- surgery_list -->
+
+                    <ul class="center_list">
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list32.png" alt="마취통증의학과">
+                                <p>마취통증의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list33.png" alt="방사선종양학과">
+                                <p>방사선종양학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list34.png" alt="병리과">
+                                <p>병리과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list35.png" alt="영상의학과">
+                                <p>영상의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list36.png" alt="응급의학과">
+                                <p>응급의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list37.png" alt="재활의학과">
+                                <p>재활의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list38.png" alt="직업환경의학과">
+                                <p>직업환경의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list39.png" alt="진단검사의학과">
+                                <p>진단검사의학과</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/sub/list40.png" alt="핵의학과">
+                                <p>핵의학과</p>
+                            </a>
+                        </li>
+                    </ul><!-- center_list -->
+
+                </div><!-- list -->
+
+            </div><!-- inner -->
+        </main>
+
+        <footer id="footer">
+
+            <div class="footer_bg">
+                <img src="../images/info_bg.png" alt="해운대백병원 로고">
+            </div><!-- footer_bg -->
+
+            <div class="inner">
+                <div class="footer_symbol">
+                    <div class="symbol">
+                        <img src="../images/footer_symbol.png" alt="보건복지부 인증 의료기관">
+                        <p>보건복지부<br>인증 의료기관</p>
+                    </div><!-- symbol -->
+                    <div class="family">
+                        <select name="family_site" id="family_link">
+                            <option value="" href="#">패밀리 사이트</option>
+                            <option value="" href="#">백중앙의료원</option>
+                            <option value="" href="#">부산백병원</option>
+                            <option value="" href="#">상계백병원</option>
+                            <option value="" href="#">일산백병원</option>
+                            <option value="" href="#">해운대백병원</option>
+                            <option value="" href="#">인제대학교</option>
+                        </select>
+                    </div><!-- family -->
+                </div><!-- footer_symbol -->
+                <div class="footer_txt">
+                    <ul class="footer_link">
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">영상정보처리기기운영방침</a>
+                        </li>
+                        <li>
+                            <a href="#">환자권리장전</a>
+                        </li>
+                    </ul><!-- footer_link -->
+                    <ul class="sns">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-youtube" aria-label="유튜브"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-instagram" aria-label="인스타그램"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/footer_blog.png" aria-label="네이버 블로그" alt="네이버 블로그">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-facebook" aria-label="페이스북"></i>
+                            </a>
+                        </li>
+                    </ul><!-- sns -->
+                </div><!-- footer_txt -->
+                <address>
+                    부산광역시 해운대구 해운대로 875 (우)48108 | 지번 : 좌동 1435
+                </address>
+                <div class="copy">
+                    COPYRIGHT &copy; 2022 INJE UNIVERSITY HAEUNDAE PAIK HOSPITAL. ALL RIGHTS RESERVED
+                </div><!-- copy -->
+            </div><!-- inner -->
+        </footer>
+
+    </div><!-- wrap -->
+</body>
+
+</html>

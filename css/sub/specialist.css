@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* main */
+
+#main { padding: 100px 5%; background: #fff;}
+#main h2 { font-size: 6rem; text-align: center; padding: 50px 0 80px;}
+#main h3 { font-size: 4rem; padding: 70px 0 0 50px; text-align: center; color: #000;}
+
+#main .inner .list_box { display: flex; gap: 10px;}
+
+/* medicine */
+.medicine { transition: 1s all; width: calc((100% - 20px) / 3); cursor: pointer;}
+.medicine .tit { transition: 1s all; display: flex; justify-content: space-between; width: 100%; height: 200px; border-radius: 5rem; 
+background: #eee; z-index: 10;}
+
+.medicine .tit:hover { background: url('../../images/sub/medicine_bg.jpg') no-repeat; background-size: cover;}
+.medicine.on .tit { background: url('../../images/sub/medicine_bg.jpg') no-repeat; background-size: cover;}
+
+
+/* surgery */
+.surgery { transition: 1s all; width: calc((100% - 20px) / 3); cursor: pointer;}
+.surgery .tit { transition: 1s all; display: flex; justify-content: space-between; width: 100%; height: 200px; border-radius: 5rem; 
+background: #eee; z-index: 10;}
+
+.surgery .tit:hover { background: url('../../images/sub/surgery_bg.jpg') no-repeat; background-size: cover;}
+.surgery.on .tit { background: url('../../images/sub/surgery_bg.jpg') no-repeat; background-size: cover;}
+
+
+/* center */
+.center { transition: 1s all; width: calc((100% - 20px) / 3); cursor: pointer;}
+.center .tit { transition: 1s all; display: flex; justify-content: space-between; width: 100%; height: 200px; border-radius: 5rem; 
+background: #eee; z-index: 10;}
+
+.center .tit:hover { background: url('../../images/sub/center_bg.jpg') no-repeat; background-size: cover;}
+.center.on .tit { background: url('../../images/sub/center_bg.jpg') no-repeat; background-size: cover;}
+
+
+/* list */
+.list { padding: 30px 0; position: relative; height: 550px; z-index: 10;}
+.list ul { position: absolute; top: 0; left: 0; display: none; gap: 10px; flex-wrap: wrap; padding: 50px 0; width: 100%;}
+.list ul.on { display: flex;}
+.list ul li { width: calc((100% - 30px) / 4);}
+.list ul li a { display: flex; justify-content: space-between; align-items: center; border: 1px solid #333; border-radius: 1rem; 
+background: #eee; color: #000; padding: 5px 10px;}
+.list ul li a:hover { border: 1px solid #1358a8; color: #fff; background: #1358a8;}
+
+.list ul li a img { display: block; width: 30%;}
+.list ul li a p { padding-right: 20px; font-size: 2rem;}
+
+
+
+@media (max-width:1200px) {
+    #main h2 { font-size: 5rem;}
+    #main h3 { font-size: 3.5rem; padding: 50px 0 0 50px;}
+    #main h4 { font-size: 2.5rem;}
+    #main h5 { font-size: 2rem;}
+    #main p { font-size: 1.5rem;}
+    #main li {  font-size: 1.5rem;}
+    #main a { font-size: 2rem;}
+    .list_box { flex-wrap: wrap;}
+    .list_box > div { width: 100%;}
+    .list_box .tit { height: 150px;}
+    .list { height: 700px;}
+    .list ul li { width: calc((100% - 30px) / 3);}
+    .list ul li a img { display: block; width: 20%;}
+}
+
+@media (max-width:800px) {
+    #main h2 { font-size: 3.5rem;}
+    #main h3 { font-size: 2.5rem; padding: 35px 0 0 40px;}
+    #main h4 { font-size: 2rem;}
+    #main h5 { font-size: 1.6rem;}
+    #main p { font-size: 1.3rem;}
+    #main li {  font-size: 1.3rem;}
+    #main a { font-size: 1.8rem;}
+    .list_box { flex-wrap: wrap;}
+    .list_box > div { width: 100%;}
+    .list_box .tit { height: 100px;}
+    .list { height: 1000px;}
+    .list ul li { width: calc((100% - 30px) / 2);}
+    .list ul li a img { display: block; width: 30%;}
+    .list ul li a p { padding-right: 15px; font-size: 2rem;}
+}
+
+@media (max-width:400px) {
+    #main h2 { font-size: 3rem;}
+    #main h3 { font-size: 2rem; padding: 20px 0 0 30px;}
+    #main h4 { font-size: 1.6rem;}
+    #main h5 { font-size: 1.4rem;}
+    #main p { font-size: 1.2rem;}
+    #main li {  font-size: 1.2rem;}
+    #main a { font-size: 1.6rem;}
+    .list_box { flex-wrap: wrap;}
+    .list_box > div { width: 100%;}
+    .list_box .tit { height: 80px;}    
+    .list { height: 2000px;}
+    .list ul li { width: 100%;}
+    .list ul li a img { display: block; width: 30%;}
+    .list ul li a p { padding-right: 10px; font-size: 2rem;}
+}

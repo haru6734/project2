@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+:root {
+    --main-font: font-family: "Pretendard", sans-serif;
+    --sub-font: font-family:  'Godo', sans-serif;
+}
+
+html,body { width: auto; overflow-x: hidden;}
+
+@media (max-width:1200px) {
+    html,body { width: auto; overflow-x: hidden;}    
+    #fp-nav { display: none !important;}
+}
+
+body { font-family: "Pretendard",  'Godo', sans-serif; font-size: 1.6rem; line-height: 1.5; color: #000;}
+
+.inner { margin: 0 auto; padding: 0 5%;}
+
+/* wrap */
+
+#wrap { background: #fff;}
+
+
+/* mgnb */
+
+.gnb_wrap { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #e6f8f8; z-index: 200; padding: 100px 0; text-align: center;}
+
+.gnb_wrap h3 img { display: inline-block; padding: 100px 0;}
+.gnb_wrap .mgnb li a { color: #333; font-size: 3rem; display: block; padding: 30px 0; height: 100px; font-family: var(--sub-font);}
+.gnb_wrap .mgnb li:hover a { color: #1358a8; font-size: 3.5rem; display: block; padding: 30px 0; font-weight: 700;}
+
+.gnb_wrap .all_close { position: absolute; left: 50%; top: 10px; transform: translateX(-51%); width: 100px; height: 100px; cursor: pointer; display: inline-block; background: rgba(0,0,0,0.5); color: #fff; padding: 3px 3px 0 3px;}
+.gnb_wrap .all_close i { font-size: 6rem;}
+
+
+/* header */
+#header { position: relative; transition: 0.3s all; position: fixed; left: 0; top: 0; width: 100%; z-index: 2; border-bottom: 1px solid rgba(255,255,255,0.3); background: #fff; z-index: 100;}
+
+#header .inner { display: flex; justify-content: space-between; align-items: center;}
+#header h1 a { transition: 0.3s all; display: block;}
+#header h1 a img { display: block;}
+
+
+#header .gnb { display: flex;}
+#header .gnb > li { position: relative;}
+#header .gnb > li > a { display: block; font-size: 2rem; padding: 20px 50px; color: #000; font-weight: 700; font-family: var(--sub-font);}
+
+
+#header .gnb > li > .depth2 { position: absolute; top: 70px; right: 0; width: 100%; text-align: center; z-index: 2; padding: 2px 0;} 
+#header .gnb > li > .depth2 li a { display: block; width: 100%; padding: 4px 10px; font-size: 1.8rem;}
+
+#header .gnb > li:hover > .depth2 { padding: 0; border-top: 2px solid #01b9b7;}
+#header .gnb > li > .depth2 li:hover a { font-weight: 700; color: #1358a8;}
+
+#header .depth2_bg { position: absolute; left: 0; top: 71px; background: #fff; width: 100%; height: 220px; z-index: 1;}
+
+#header .util { display: flex; gap: 10px; align-items: center;}
+#header .util .language { display: flex;}
+#header .util .language select { display: inline-block; background: none; padding-right: 10px; color: #000; font-size: 1.6rem; font-weight: 600; font-family: var(--sub-font); cursor: pointer;}
+
+#header .util .ham a { display: none; padding: 0 10px;}
+#header .util .ham a i { transition: 0.3s all; font-size: 4rem; color: #000;}
+
+
+@media (max-width:1400px) {
+    #header .gnb > li > a { font-size: 1.4rem;}
+}
+
+@media (max-width:1400px) {
+    #header { width: 100%;}
+    #header h1 a img { display: block; width: 200px;}
+    #header .gnb { display: none;}    
+    #header .util .language { display: none;}
+    #header .util .ham a { display: block;}
+    #header .util .ham a i { color: #000;}
+    .gnb_wrap .mgnb { display: block;}    
+}
+
+@media (max-width:400px) {
+    #header { width: 100%;}
+    #header h1 a img { display: block; width: 150px;}
+    #header .gnb { display: none;}
+    #header .util .language { display: none;}
+    #header .util .ham a { display: block;}
+    #header .util .ham a i { color: #000;}
+    .gnb_wrap .mgnb { display: block;}    
+}
+
+@media (min-width:300px) {
+    #header { width: 100%;}  
+}
+
+/* footer */
+
+#footer { position: relative; background: #fff; padding: 100px 0;}
+
+#footer .footer_bg { position: absolute; right: 0; bottom: 0; width: 1080px; height: 1080px;}
+#footer .footer_bg img { display: block; width: 100%; height: 100%;}
+
+#footer .footer_symbol { display: flex; justify-content: space-between; align-items: center; font-size: 1.8rem;}
+
+#footer .footer_symbol .symbol { display: flex; gap: 10px; align-items: center; background: #f5f5f5; border-radius: 10px; padding: 10px 20px; text-align: center;}
+
+#footer .footer_symbol .family { display: flex; justify-content: space-between; gap: 15px; align-items: center; background: #f5f5f5; border-radius: 10px; padding: 10px 20px; text-align: center; z-index: 10;}
+#footer .footer_symbol .family select { background: #f5f5f5;}
+
+
+#footer .footer_txt { display: flex; justify-content: space-between; z-index: 10;}
+#footer .footer_txt ul { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 50px 0;}
+
+#footer .footer_txt .footer_link a { display: block; font-size: 1.8rem;}
+
+#footer .footer_txt .sns { z-index: 10;}
+#footer .footer_txt .sns li:not(:nth-child(3)) { font-size: 3rem;}
+#footer .footer_txt .sns li:nth-child(3) a {display: block;}
+#footer .footer_txt .sns li:nth-child(3) a img { display: block; width: 30px; height: 30px;}
+
+#footer address { font-size: 1.6rem; color: rgba(0,0,0,0.6);}
+
+#footer .copy { font-size: 1.6rem; color: rgba(0,0,0,0.3);}
+
+@media (max-width:1200px) {
+    #footer h2 { font-size: 5rem !important;}
+    #footer h3 { font-size: 3.5rem !important;}
+    #footer h4 { font-size: 2.5rem !important;}
+    #footer h5 { font-size: 2rem !important;}
+    #footer p { font-size: 1.5rem !important;}
+    #footer li {  font-size: 1.5rem !important;}
+    #footer a { font-size: 2rem !important;}
+
+    #footer { width: 100%;}
+    #footer .footer_bg { position: absolute; right: 0; bottom: 0; width: 100%; height: 100%;}
+    #footer .footer_bg img { display: block; width: 100%;}
+
+    address { font-size: 1.6rem !important;}
+    #footer .copy { font-size: 1.6rem !important;}
+}
+
+@media (max-width:800px) {
+    
+    #footer h2 { font-size: 3.5rem !important;}
+    #footer h3 { font-size: 2.5rem !important;}
+    #footer h4 { font-size: 2rem !important;}
+    #footer h5 { font-size: 1.6rem !important;}
+    #footer p { font-size: 1.3rem !important;}
+    #footer li {  font-size: 1.3rem !important;}
+    #footer a { font-size: 1.3rem !important;}
+
+    #footer { width: 100%;}
+    #footer .footer_bg { position: absolute; right: 0; bottom: 0; width: 50%; height: 50%;}
+    #footer .footer_bg img { display: block; width: 100%;}
+
+    #footer .footer_txt { flex-wrap: wrap; width: 100%;}
+    #footer .footer_txt ul { padding: 10px 0;}
+    
+    address { font-size: 1.3rem !important;}
+    #footer .copy { font-size: 1.3rem !important;}
+}
+
+@media (max-width:400px) {
+    #footer h2 { font-size: 3rem !important;}
+    #footer h3 { font-size: 2rem !important;}
+    #footer h4 { font-size: 1.6rem !important;}
+    #footer h5 { font-size: 1.4rem !important;}
+    #footer p { font-size: 1.2rem !important;}
+    #footer li {  font-size: 1.2rem !important;}
+    #footer a { font-size: 1.2rem !important;}
+
+    #footer { width: 100%;}
+    #footer .footer_bg { position: absolute; right: 0; bottom: 0; width: 50%; height: 50%;}
+    #footer .footer_bg img { display: block; width: 100%;}
+    
+    address { font-size: 1.1rem !important;}
+    #footer .copy { font-size: 1.1rem !important;}
+}
+
+
+
+/* sidebar */
+
+#sidebar { transition: 0.5s all; position: fixed; right: -80px; top: 50%; transform: translateY(-50%); width: 130px; height: 400px; display: flex; justify-content: space-between;}
+#sidebar.on { transition: 0.5s all; right: 0px;}
+
+#sidebar .side_arrow { position: relative; width: calc(100% - 80px); height: 400px;}
+#sidebar .side_arrow i { position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 5rem; color: #01b9b7;}
+
+#sidebar ul { width: 70px; height: 400px; background: #01b9b7; border-radius: 50px 0 0 50px; text-align: center;}
+#sidebar ul li { transition: 0.5s all; height: calc(100% / 5);}
+#sidebar ul li:not(:last-of-type) { border-bottom: 1px solid #fff;}
+#sidebar ul li a { transition: 0.5s all; display: block; padding: 20px 0;}
+#sidebar ul li:last-of-type a { padding-top: 5px;}
+#sidebar ul li a p { transition: 0.5s all; font-size: 0;}
+#sidebar ul li a i { transition: 0.5s all; font-size: 3rem; color: #fff;} 
+#sidebar ul .gotop a i{ transition: 0.5s all; font-size: 4rem; color: #fff;} 
+
+
+@media (max-width:1200px) {
+    #sidebar { display: none;}
+}
